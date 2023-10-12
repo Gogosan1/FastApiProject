@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Форма для авторизации</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/registration.css" type="text/css" />
+  </head>
+  <body>
+    <div class="dws-wrapper">
+      <div class="dws-form">
+        <!-- Вкладки на CSS -->
+        <input type="radio" id="tab-1" name="tabs" checked />
+        <label class="tab" for="tab-1" title="Вкладка 1">Авторизация</label>
+
+        <input type="radio" name="tabs" id="tab-2" />
+        <label class="tab" for="tab-2" title="Вкладка 2">Регистрация</label>
+
+        <form id="form-1" action="sign_in" method="get" class="tab-form">
+          <div class="box-input">
+            <input class="input" type="email" required />
+            <label>Введите E-mail</label>
+          </div>
+
+          <div class="box-input">
+            <input class="input" type="password" required />
+            <label>Введите пароль</label>
+          </div>
+
+          <input type="submit" value= "Войти" class="button"/>
+          <ul class="social">
+              <a href="#"
+                ><div><i class="fa fa-vk"></i></div
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><div><i class="fa fa-youtube"></i></div
+              ></a>
+            </li>
+          </ul>
+          <a href="#">Я забыл свой пароль</a>
+        </form>
+
+        <form id="form-2" action="sign_up" method="post" class="tab-form">
+          <input
+            class="input"
+            type="email"
+            placeholder="Введите E-mail адрес"
+          />
+          <input class="input" type="passowrd" placeholder="Введите пароль" />
+          <input class="input" type="password_check" placeholder="Повторите пароль" />
+          <a href="#" class="button">Регистрация</a>
+
+          <div class="recover">
+            <input type="checkbox" id="ckbox" />
+            <label for="ckbox"
+              >Ознакомлен(-а) и принимаю
+              <a href="#">условия регистрации</a></label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
